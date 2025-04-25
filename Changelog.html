@@ -8,6 +8,34 @@
 
 <style> 
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: auto;
+}
+
+.nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FFF7B2;
+  transform: scale(1.1);
+}
+
 .Changelog {
       background-color: rgba(53, 53, 53, 0.7);
       padding: 30px;
@@ -20,9 +48,9 @@
   margin: 0;
   overflow: hidden;
   height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* Asegura que el contenedor de partículas cubra toda la pantalla */
 #particles-js {
   position: fixed;
   top: 0;
@@ -34,7 +62,6 @@
 
 </style>
 
-<link rel="stylesheet" href="CSS/STYLETITLE.css">
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
@@ -69,25 +96,25 @@
 <script>
   particlesJS('particles-js', {
     particles: {
-      number: { value: 100 }, // Número de partículas
-      color: { value: "#ffffff" }, // Color de las partículas (blanco)
-      shape: { type: "circle" }, // Forma de las partículas
+      number: { value: 100 },
+      color: { value: "#ffffff" }, 
+      shape: { type: "circle" }, 
       opacity: { value: 0.9, random: true, anim: { enable: true, speed: 1, opacity_min: 0.3, sync: false } },
       size: { value: 3, random: true, anim: { enable: true, speed: 2, size_min: 1, sync: false } },
       move: {
         enable: true,
-        speed: 4, // Velocidad de movimiento para las estrellas fugaces
-        direction: "top-left", // Movimiento diagonal hacia la izquierda
+        speed: 4,
+        direction: "top-left", 
         random: false,
         straight: true,
-        out_mode: "out", // Las partículas desaparecerán cuando se salgan de la pantalla
+        out_mode: "out", 
         bounce: false,
       },
     },
     interactivity: {
       events: {
-        onhover: { enable: false }, // Desactiva la interacción al pasar el ratón
-        onclick: { enable: false }, // Desactiva la interacción al hacer clic
+        onhover: { enable: false }, 
+        onclick: { enable: false }, 
       },
     },
     retina_detect: true,
