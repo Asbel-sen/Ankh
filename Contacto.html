@@ -6,16 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ankh Web</title>
 
-  <link rel="stylesheet" href="CSS/STYLETITLE.css">
-
   <style> 
     body {
+      font-family: 'Segoe UI', sans-serif;
       background-color: black;
       color: white;
       margin: 0;
       padding: 0;
       overflow: hidden;
     }
+
+    .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.Redes {
+  position: fixed;
+  top: 220;
+  left: 0;
+  width: auto;
+  padding: 5px 22px;
+  display: flex;
+  gap: 50px; 
+  align-items: center;
+  z-index: 1001;
+}
+
+.Redes img {
+  width: 250px; 
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.Redes img:hover {
+  transform: scale(1.1); 
+}
+.navbar-logo {
+  height: 40px;
+  margin-right: auto;
+}
+
+.nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #B78FB0;
+  transform: scale(1.1);
+}
 
     .fondo-gifLess {
       position: absolute;
@@ -30,9 +78,22 @@
       position: relative;
       z-index: 1;
     }
+
+.Changelog {
+    font-family: 'FuenteTexto', sans-serif;
+    font-weight: 22;
+    font-size: 15px; 
+}
+CC {
+    margin-top: 0;      
+    margin-bottom: 0px; 
+    margin-left: 50px;
+    position: absolute;
+    top: 12%;
+    left: -2%; 
+}
   </style>
 
-  <link rel="stylesheet" href="CSS/STYLETITLE.css">
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
@@ -41,7 +102,7 @@
       particlesJS('fondo-gifLess', {
         particles: {
           number: {
-            value: 100,  // Número de partículas
+            value: 100, 
             density: {
               enable: true,
               value_area: 800
@@ -75,7 +136,7 @@
             }
           },
           line_linked: {
-            enable: true  // Desactivamos las líneas de conexión para que se vea más como en la Matrix
+            enable: true  
           },
           move: {
             enable: true,
@@ -122,13 +183,13 @@
 
       <div class="Redes">
         <a href="https://www.instagram.com/ankhoficial/">
-          <img src="C:/Users/usuario20/Downloads/AnkhWeb/Imagenes/IG.png" alt="Logo1">
+          <img src="Imagenes/IG.png" alt="Logo1">
         </a>
         <a href="https://x.com/ankh_oficial?t=KfZnaffSPwPN8keLY9u0tQ&s=09">
-          <img src="C:/Users/usuario20/Downloads/AnkhWeb/Imagenes/X.png" alt="Logo2">
+          <img src="Imagenes/X.png" alt="Logo2">
         </a>
         <a href="https://www.facebook.com/profile.php?id=61575151393827&rdid=6bPNtFLliq3RpP5i">
-          <img src="C:/Users/usuario20/Downloads/AnkhWeb/Imagenes/Feibu.png" alt="Logo3">
+          <img src="Imagenes/Feibu.png" alt="Logo3">
         </a>
       </div>
     </CC>
