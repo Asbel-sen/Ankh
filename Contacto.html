@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankh Web</title>
+
+  <link rel="stylesheet" href="CSS/STYLETITLE.css">
+
+  <style> 
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .fondo-gifLess {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+
+  <link rel="stylesheet" href="CSS/STYLETITLE.css">
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    window.onload = function() {
+      particlesJS('fondo-gifLess', {
+        particles: {
+          number: {
+            value: 100,  // Número de partículas
+            density: {
+              enable: true,
+              value_area: 800
+            }
+          },
+          color: {
+            value: "#B758A7" 
+          },
+          shape: {
+            type: "circle", 
+            stroke: {
+              width: 0,
+              color: "#B758A7"
+            }
+          },
+          opacity: {
+            value: 0.4,
+            random: true,
+            anim: {
+              enable: false
+            }
+          },
+          size: {
+            value: 5,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 1,
+              size_min: 1,
+              sync: false
+            }
+          },
+          line_linked: {
+            enable: true  // Desactivamos las líneas de conexión para que se vea más como en la Matrix
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "bottom", 
+            random: false,
+            straight: true,
+            out_mode: "out",  
+            bounce: false
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false
+            },
+            onclick: {
+              enable: false
+            },
+            resize: true
+          }
+        },
+        retina_detect: true
+      });
+    }
+  </script>
+
+
+</head>
+
+<body>
+
+  <div class="contenido">
+    <CC class="Changelog"><br><br><br><br>
+      Antes de comunicar un queja/duda a nuestro contacto asegurate que: <br><br>
+      Estas usando la última versión de Ankh<br>
+      Tu pregunta no esté en el FAQ<br>
+      Estas usando un dispositivo de 64 bits
+      <br><br>
+      CORREO DE CONTACTO: <h3 style="color: #a26cc4;">ankhempresaempresarial@gmail.com</h3> 
+
+      <h2 style="color: #BB8DB3;">NUESTRAS REDES SOCIALES:</h2> 
+
+      <div class="Redes">
+        <a href="https://www.instagram.com/ankhoficial/">
+          <img src="C:/Users/usuario20/Downloads/AnkhWeb/Imagenes/IG.png" alt="Logo1">
+        </a>
+        <a href="https://x.com/ankh_oficial?t=KfZnaffSPwPN8keLY9u0tQ&s=09">
+          <img src="C:/Users/usuario20/Downloads/AnkhWeb/Imagenes/X.png" alt="Logo2">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61575151393827&rdid=6bPNtFLliq3RpP5i">
+          <img src="C:/Users/usuario20/Downloads/AnkhWeb/Imagenes/Feibu.png" alt="Logo3">
+        </a>
+      </div>
+    </CC>
+
+    <div class="navbar">
+      <a href="index.html">
+        <img src="Imagenes/Logo3.png" alt="Logo" class="navbar-logo">
+      </a>
+      <a href="Producto.html" class="nav-link">Producto</a>
+      <a href="FAQ.html" class="nav-link">FAQ</a>
+      <a href="Contacto.html" class="nav-link">Contacto</a>
+      <a href="Changelog.html" class="nav-link">Changelog</a>
+      <a href="AcercaDe.html" class="nav-link">Acerca De</a>
+    </div>
+
+  </div>
+  <div id="fondo-gifLess"></div>
+</body>
+</html>

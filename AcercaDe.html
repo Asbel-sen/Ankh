@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankh Web</title>
+
+  <!-- Estilo interno -->
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2e2e2e;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar-logo {
+      height: 40px;
+      margin-right: auto;
+    }
+
+    .nav-link {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ccc;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #00ffe7;
+      transform: scale(1.1);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .faq-item {
+      background: #1c1c1c;
+      margin: 10px 0;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .faq-question {
+      padding: 13px;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #333;
+      border-bottom: 1px solid #444;
+    }
+
+    .faq-answer {
+      padding: 13px;
+      display: none;
+      background-color: #262626;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <div class="navbar">
+    <a href="index.html"><img src="Imagenes/Logo3.png" alt="Logo" class="navbar-logo"></a>
+    <a href="Producto.html" class="nav-link">Producto</a>
+    <a href="FAQ.html" class="nav-link">FAQ</a>
+    <a href="Contacto.html" class="nav-link">Contacto</a>
+    <a href="Changelog.html" class="nav-link">Changelog</a>
+    <a href="AcercaDe.html" class="nav-link">Acerca De</a>
+  </div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">
+        <h2 style="color: #ffffff;">¿Qué es Ankh?</h2>
+      </div>
+      <div class="faq-answer">
+        Ankh es una aplicación de gestión de contraseñas diseñada para quienes valoran la privacidad, la velocidad y el control total sobre sus datos. A diferencia de otros gestores, Ankh no depende de la nube ni de terceros. Todo se almacena localmente, bajo cifrado, en tu propio dispositivo.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h2 style="color: #ffffff;">¿Por qué confiar en Ankh?</h2>
+      </div>
+      <div class="faq-answer">
+        •No requiere conexión a internet. <br>
+        •Las contraseñas se cifran localmente.<br>
+        •Código claro, sin rastreadores ni anuncios.<br>
+        •No recolectamos ningún dato personal.<br>
+        •Interfaz amigable y rápida.<br>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h2 style="color: #ffffff;">Misión</h2>
+      </div>
+      <div class="faq-answer">
+        Proporcionar una herramienta de gestión de contraseñas local, segura y accesible, que permita a los usuarios mantener el control total sobre su información personal sin depender de servicios en la nube ni exponerse a riesgos innecesarios. <br><br>
+        Buscamos ofrecer una solución confiable y eficiente, enfocada en la privacidad, simplicidad y autonomía digital.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h2 style="color: #ffffff;">Visión</h2>
+      </div>
+      <div class="faq-answer">
+        Convertirnos en una referencia en herramientas de seguridad personal offline, fomentando una cultura de independencia tecnológica y protección de datos personales. <br><br>
+        Aspiramos a que Ankh sea reconocido como un símbolo de confianza, transparencia y control total sobre lo que verdaderamente importa: tus claves.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const answer = item.nextElementSibling;
+        answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+  </script>
+
+<script>
+  particlesJS('particles-js', {
+    particles: {
+      number: { value: 80 },
+      color: { value: "#00ffe7" },
+      shape: {
+        type: "edge",
+        stroke: { width: 0, color: "#000000" },
+        polygon: { nb_sides: 5 }
+      },
+      opacity: {
+        value: 0.5,
+        random: true,
+        anim: { enable: false }
+      },
+      size: {
+        value: 4,
+        random: true,
+        anim: { enable: false }
+      },
+      line_linked: {
+        enable: true,
+        distance: 120,
+        color: "#00ffe7",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1.5,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        bounce: false
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        repulse: { distance: 100, duration: 0.4 },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+
+</body>
+</html>
